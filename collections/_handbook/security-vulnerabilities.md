@@ -33,13 +33,13 @@ layout: default
 
 .page-header-section {
     background-color: var(--header-background);
-    color: #f5f5f5;
+    color: #ffffff;
     padding: 30px 0;
     text-align: center;
 }
 
 .page-header-section h1 {
-    margin: none;
+    margin: 0;
     font-size: 2.5rem;
 }
 .page-header-section p {
@@ -65,11 +65,12 @@ h2.heading-top {
 
 a {
     color: var(--text-primary);
-    text-decoration: #02dac0;
+    text-decoration-line: underline
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration-color: #02dac0;
+    text-decoration-line: underline;
 }
 
 ul {
@@ -92,7 +93,7 @@ li {
     padding: 15px;
     border: #00b39f solid 1px;
     border-radius: 6px;
-    background-color: none;
+    background-color: transparent;
 }
 
 .project-org-list a {
@@ -162,7 +163,7 @@ tr:hover {
 
     .btn {
         display: inline-block;
-        size: 1.5rem;
+        font-size: 1rem;
         block-size: fit-content;
         margin: 1rem auto 0;
         padding: 0.5rem 1.5rem;
@@ -203,7 +204,7 @@ tr:hover {
     }
   </script>
 
-    <div class="page-header-section" style="color: #ffffff;">
+    <div class="page-header-section">
         <h1>Security Vulnerabilities</h1>
         <p>Report Meshery security issues responsibly — we investigate every report.</p>
     </div>
@@ -220,6 +221,7 @@ tr:hover {
                         <a href="https://github.com/meshery">
                             <img
                                 src="/apple-touch-icon-precomposed.png"
+                                alt="Meshery organization logo"
                             />
                             &nbsp; Meshery
                         </a>
@@ -230,6 +232,7 @@ tr:hover {
                         <a href="https://github.com/meshery/meshery.io">
                             <img
                                 src="/apple-touch-icon-precomposed.png"
+                                alt="Meshery.io site logo"
                             />
                             &nbsp; Meshery.io
                         </a>
@@ -294,7 +297,7 @@ tr:hover {
                         &nbsp; <button class="btn" style="background-color: var(--background-primary);"><a href="/blog/categories/security/"> security </a></button>
                     </div>
 
-                    <img class="featured-image" src="/assets/images/posts/2025-03-27-meshery-at-kubecon-eu-2025/kubecon-eu-2025.png" alt="">
+                    <img class="featured-image" src="/assets/images/posts/2025-03-27-meshery-at-kubecon-eu-2025/kubecon-eu-2025.png" alt="Meshery at KubeCon EU 2025 Security Slam announcement banner">
 
                     <div class="blog-post-excerpt">
                         <p>We're thrilled to announce that Meshery has been selected as one of four CNCF projects to take part in the Security Slam at KubeCon EU 2025! This is a fantastic opportunity for the Meshery community to come together and make significant strides in enhancing the security of our project.</p>
@@ -308,26 +311,26 @@ tr:hover {
                     <table>
                         <thead>
                             <tr>
-                                <th><b>DATE ANNOUNCED</b></th>
-                                <th><b>CVE ID</b></th>
-                                <th><b>DESCRIPTION</b></th>
-                                <th><b>AFFECTED COMPONENT</b></th>
-                                <th><b>VULNERABLE VERSION</b></th>
-                                <th><b>PATCHED VERSION</b></th>
-                                <th><b>FIX DETAILS</b></th>
-                                <th><b>LINKS</b></th>
+                                <th>DATE ANNOUNCED</th>
+                                <th>CVE ID</th>
+                                <th>DESCRIPTION</th>
+                                <th>AFFECTED COMPONENT</th>
+                                <th>VULNERABLE VERSION</th>
+                                <th>PATCHED VERSION</th>
+                                <th>FIX DETAILS</th>
+                                <th>LINKS</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>2021-04-28</td>
                                 <td>CVE-2021-31856</td>
-                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo ratione iure perferendis nisi deleniti amet quae, vitae at necessitatibus doloremque ex quos, omnis consequatur expedita ab earum hic illum debitis!</td>
+                                <td><!-- TODO: Add actual description for CVE-2021-31856 -->A detailed description of the vulnerability and its impact should be provided here.</td>
                                 <td>Dummy</td>
                                 <td>Dummy</td>
                                 <td>Dummy</td>
-                                <td><a href="">fix pull</a></td>
-                                <td><a href="">mitre</a>, <a href="">details</a></td>
+                                <td><a href="#link-to-fix-pull-request">fix pull</a></td> <!-- TODO: Update with actual link -->
+                                <td><a href="#link-to-mitre">mitre</a>, <a href="#link-to-details">details</a></td> <!-- TODO: Update with actual links -->
                             </tr>
                         </tbody>
                     </table>
