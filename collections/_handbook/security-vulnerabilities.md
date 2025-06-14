@@ -1,7 +1,6 @@
 ---
-permalink: /community/handbook/security-vulnerabilities/
 title: Security Vulnerabilities
-description: Reporting security vulnerabilities in Meshery.
+description: Report Meshery security issues responsibly — we investigate every report.
 layout: default
 ---
 
@@ -20,7 +19,7 @@ layout: default
                 <li>
                     <a href="https://github.com/meshery">
                         <img
-                            src="/apple-touch-icon-precomposed.png"
+                            src="\assets\images\logos\meshery-logo.png"
                             alt="Meshery organization logo"/>
                         Meshery
                     </a>
@@ -29,7 +28,7 @@ layout: default
                 <li>
                     <a href="https://github.com/meshery/meshery.io">
                         <img
-                            src="/apple-touch-icon-precomposed.png"
+                            src="\assets\images\logos\meshery-logo.png"
                             alt="Meshery.io site logo"
                         />
                         Meshery.io
@@ -109,12 +108,12 @@ layout: default
                         <tr>
                             <td>2021-04-28</td>
                             <td>CVE-2021-31856</td>
-                            <td><!-- TODO: Add actual description for CVE-2021-31856 -->A detailed description of the vulnerability and its impact should be provided here.</td>
-                            <td>Dummy</td>
-                            <td>Dummy</td>
-                            <td>Dummy</td>
-                            <td><a href="#link-to-fix-pull-request">fix pull</a></td> <!-- TODO: Update with actual link -->
-                            <td><a href="#link-to-mitre">mitre</a>, <a href="#link-to-details">details</a></td> <!-- TODO: Update with actual links -->
+                            <td>A SQL Injection vulnerability in the REST API in Layer5 Meshery 0.5.2 allows an attacker to execute arbitrary SQL commands via the /experimental/patternfiles endpoint (order parameter in GetMesheryPatterns in models/meshery_pattern_persister.go).</td>
+                            <td>REST API</td>
+                            <td>v0.5.2</td>
+                            <td>v0.5.3</td>
+                            <td><a href="https://github.com/meshery/meshery/pull/2745">fix pull</a></td> 
+                            <td><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31856">mitre</a>, <a href="https://github.com/ssst0n3/CVE-2021-31856">details</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -122,9 +121,3 @@ layout: default
         </div>
     </div>
 </div>
-
-<script>
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.body.classList.add('dark-mode');
-    }
-</script>
